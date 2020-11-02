@@ -1126,6 +1126,10 @@ button {
   color: #ea4c89;
 }
 
+.useful-links {
+  margin: 0px 100px 0px 0px;
+}
+
 .useful-title {
   font-size: 22px;
   color: #333;
@@ -1150,10 +1154,6 @@ button {
 .first-col-page-link {
   font-size: 15px;
   color: #666;
-}
-
-.second-col-page {
-  margin: 0px 100px 0px 0px;
 }
 
 .contact-footer a {
@@ -1228,9 +1228,28 @@ button {
   }
 }
 
+@media (max-width: 1117px) {
+  .body-footer a,
+  .body-footer p {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 1110px) {
   .header-item {
     margin: 0px 15px;
+  }
+}
+
+@media (max-width: 1101px) {
+  .first-col-page {
+    margin: 0px 40px 0px 0px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .first-footer-block {
+    margin: 0px 40px 0px 0px;
   }
 }
 
@@ -1343,15 +1362,53 @@ button {
   }
 }
 
+@media (max-width: 1030px) {
+  .useful-links {
+    margin: 0px 75px 0px 0px;
+  }
+}
+
+@media (max-width: 1006px) {
+  .body-footer {
+    padding: 65px 0 40px 0;
+  }
+
+  .first-footer-block {
+    margin: 0px 22px 0px 0px;
+  }
+
+  .useful-links {
+    margin: 0px 60px 0px 0px;
+  }
+}
+
 @media (max-width: 1000px) {
   .products-body {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 790px) {
-  .useful-links {
+@media (max-width: 973px) {
+  .first-col-page {
+    margin: 0px 20px 0px 0px;
+  }
+}
+
+@media (max-width: 830px) {
+  .body-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .first-footer-block {
     display: none;
+  }
+
+  .first-col-page {
+    margin: 0px 30px 0px 0px;
   }
 }
 
@@ -1389,6 +1446,43 @@ button {
   .header-logo-wrap {
     display: block;
     margin: 0px 0px 0px 35px;
+  }
+}
+
+@media (max-width: 590px) {
+  .body-footer {
+    padding: 40px 0 20px 0;
+  }
+
+  .body-footer {
+    display: block;
+    text-align: center;
+  }
+
+  .body-footer {
+    font-size: 15px;
+  }
+
+  .useful-links {
+    margin: 0;
+  }
+
+  .all-pages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .contact-footer-map {
+    margin: 0px 0px 10px 0px;
+    max-width: 100%;
+  }
+
+  .contact-footer-tel {
+    margin: 0px 0px 10px 0px;
   }
 }
 
@@ -1441,10 +1535,6 @@ button {
   .footer-par {
     font-size: 13px;
   }
-
-  .first-col-page-link {
-    font-size: 13px;
-  }
 }
 
 @media (max-width: 455px) {
@@ -1453,13 +1543,9 @@ button {
   }
 }
 
-@media (max-width: 435px) {
-  .first-footer-block {
-    display: none;
-  }
-
-  .first-col-page-link {
-    font-size: 15px;
+@media (max-width: 450px) {
+  .body-footer {
+    padding: 30px 0 28px 0;
   }
 }
 
