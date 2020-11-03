@@ -905,15 +905,15 @@ button {
 
 .header-input {
   position: absolute;
-  z-index: -1;
   left: -237px;
+  width: 180px;
   top: 0px;
-  -webkit-transform: translateX(1000px);
-      -ms-transform: translateX(1000px);
-          transform: translateX(1000px);
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transform: translateX(1000%);
+      -ms-transform: translateX(1000%);
+          transform: translateX(1000%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .header-input::-webkit-input-placeholder {
@@ -940,6 +940,12 @@ button {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
           transform: translateX(0);
+}
+
+.main-screen {
+  background-image: url("../img/unsplash/charles-deluvio-_4K7BwaHUGc-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .main-screen {
@@ -980,37 +986,14 @@ button {
 }
 
 .products-block {
-  display: block;
   margin: auto;
-  position: relative;
-  padding: 45%;
-  background-color: #e5e5e5;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
-}
-
-.products-block button {
-  display: none;
-}
-
-.products-block:hover {
-  background-color: #505050;
-}
-
-.products-block:hover button {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  display: block;
+  max-width: 350px;
+  max-height: 350px;
 }
 
 .products-block .products-block-image {
   width: 100%;
   height: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
 }
 
 .newsletter {
@@ -1589,6 +1572,8 @@ button {
     text-align: center;
   }
 }
+
+.webp .main-screen{ background-image: url(../img/unsplash/charles-deluvio-_4K7BwaHUGc-unsplash.webp); }
 
 .webp .contact-footer-map::before{ background: url(../img/footer/map.webp); }
 
