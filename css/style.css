@@ -943,7 +943,7 @@ button {
 }
 
 .main-screen {
-  background-image: url("../img/unsplash/charles-deluvio-_4K7BwaHUGc-unsplash.jpg");
+  background-image: url("../img/unsplash/background.webp");
   background-size: cover;
   background-position: center;
 }
@@ -969,6 +969,7 @@ button {
   font-size: 55px;
   font-weight: 700;
   background-color: #f1593b;
+  cursor: pointer;
 }
 
 .container-products {
@@ -988,7 +989,8 @@ button {
 .products-block {
   margin: auto;
   max-width: 350px;
-  max-height: 350px;
+  height: 350px;
+  overflow: hidden;
 }
 
 .products-block .products-block-image {
@@ -1487,6 +1489,12 @@ button {
   }
 }
 
+@media (max-width: 550px) {
+  .products-body {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 481px) {
   .news-input {
     width: 250px;
@@ -1572,8 +1580,6 @@ button {
     text-align: center;
   }
 }
-
-.webp .main-screen{ background-image: url(../img/unsplash/charles-deluvio-_4K7BwaHUGc-unsplash.webp); }
 
 .webp .contact-footer-map::before{ background: url(../img/footer/map.webp); }
 
